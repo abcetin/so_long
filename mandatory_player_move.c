@@ -46,7 +46,7 @@ void	down(t_solong *solong, int bc)
 	solong->player->location->y += MOVE;
 	move(solong, bc, solong->player);
 	move_print_shell();
-	free(solong->player->img);
+	//free(solong->player->img);
 }
 
 void	left(t_solong *solong, int bc)
@@ -65,8 +65,7 @@ void	left(t_solong *solong, int bc)
 	solong->player->location->x -= MOVE;
 	move(solong, bc, solong->player);
 	move_print_shell();
-	free(solong->player->img);
-	free(solong->player->img);
+	//free(solong->player->img);
 }
 
 void	right(t_solong *solong, int bc)
@@ -85,5 +84,5 @@ void	right(t_solong *solong, int bc)
 	solong->player->location->x += MOVE;
 	move(solong, bc, solong->player);
 	move_print_shell();
-	free(solong->player->img);
+	//free(solong->player->img);
 }
